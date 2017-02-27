@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Main 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+	  Scanner sc=new Scanner(System.in);
+	  System.out.println("Overloading with 2 parameters");
+	  System.out.println("enter a");
+	  int a=sc.nextInt();
+	  System.out.println("enter b");
+	  int b=sc.nextInt();
+	  sum(a,b);
+                  System.out.println("Overloading with 3 parameters");
+	  System.out.println("enter k");
+	  int k=sc.nextInt();
+	  System.out.println("enter l");
+	  int l=sc.nextInt();
+                  System.out.println("enter m");
+	  int m=sc.nextInt();
+	  sum(k,l,m);
+	  System.out.println("Overloading without parameters");
+                 sum();
+ 	}
+
+	
+	 static void sum(int a,int b)
+	 {
+		 System.out.println("sum:"+(a+b));
+	 }
+                 static void sum(int k,int l,int m)
+                {
+		 System.out.println("sum:"+(k+l+m));
+	 }
+	 static void sum() 
+	 {
+		// TODO Auto-generated method stub
+		 Scanner sc=new Scanner(System.in);
+		 System.out.println("enter x");
+		 int x=sc.nextInt();
+		 System.out.println("enter y");
+		 int y=sc.nextInt();
+		 System.out.println("sum:"+(x+y));
+	 }
+
+}
